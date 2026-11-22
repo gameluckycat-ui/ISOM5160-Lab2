@@ -27,16 +27,16 @@ SECRET PHRASE (must appear on the app page): ISOM5160-HW2-SMS
 # =============================================================================
 # STUDENT ANSWERS BLOCK (fill in; keep this in the SAME .py file)
 # =============================================================================
-# Student ID: YOUR_STUDENT_ID
+# Student ID: 21387621
 #
 # GenAI acknowledgment (required if you used GenAI; otherwise write "None"):
-#   - Tools used: YOUR_ANSWER
-#   - How you used them: YOUR_ANSWER
+#   - Tools used: None
+#   - How you used them: None
 #
 # Q1. Who is the primary business user of this app?
 #     (one short sentence; e.g., an employee or a security analyst reviewing
 #      inbound SMS for spam or scam-like messages)
-#   YOUR_ANSWER:
+#   YOUR_ANSWER: a security analyst reviewing spam messages and report to business owner.
 #
 # Q2. Look at the accuracy from your 100-sample test. Is accuracy enough
 #     for a business to rely on this app, and why or why not?
@@ -44,7 +44,7 @@ SECRET PHRASE (must appear on the app page): ISOM5160-HW2-SMS
 #     YOUR app run. Comment on the cost of a false positive (blocking a
 #     legitimate SMS, such as a bank or one-time code message) versus a
 #     false negative (missing a spam or scam-like message).
-#   YOUR_ANSWER:
+#   YOUR_ANSWER: 
 #
 # =============================================================================
 
@@ -59,7 +59,7 @@ N_TEST = 100
 SPLIT_SEED = 42
 
 # Course identity (required)
-STUDENT_ID = "YOUR_STUDENT_ID"  # STUDENT: replace with your real student ID
+STUDENT_ID = "21387621"  # STUDENT: replace with your real student ID
 COURSE_SECRET = "ISOM5160-HW2-SMS"  # do not change
 
 
@@ -126,6 +126,9 @@ def compute_accuracy(pred_labels, true_labels):
 def main():
     st.title("ISOM5160")
     st.write("Homework 2 — SMS Spam / Smishing Alert")
+    st.write(f"Student ID "{STUDENT_ID})
+    st.write(f"Course Secret "{COURSE_SECRET})
+    st.write(f{HF_TOKEN})
     # STUDENT: also show Student ID and COURSE_SECRET on the page.
 
     # Use a Hugging Face fine-grained token from Streamlit Cloud secrets
